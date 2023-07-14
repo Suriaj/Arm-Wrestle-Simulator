@@ -90,6 +90,14 @@ game:GetService("ReplicatedStorage").Packages._Index:FindFirstChild("sleitnick_k
     end)
 end
 
+b:Toggle("Auto Tap", function(bool)
+    _G.autoTap = bool
+    print('Auto Tap is:', bool)
+    if bool then
+        autoTap()
+    end
+end)
+
 b:Toggle("Auto Grips", function(bool)
     _G.autoGrips = bool
     print('Auto Grips is:', bool)
